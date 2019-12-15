@@ -20,7 +20,7 @@ function Square(props) {
         if (calculateWinner(squares) || squares[i]) {
             return;
         }
-        squares[i] = this.state.xIsNext ? 'X' : 'O';
+        squares[i] = this.state.xIsNext ? 'O' : 'X';
         this.setState({
             history: history.concat([{
                 squares: squares,
@@ -80,7 +80,7 @@ function Square(props) {
         if (calculateWinner(squares) || squares[i]) {
           return;
         }
-        squares[i] = this.state.xIsNext ? 'X' : 'O';
+        squares[i] = this.state.xIsNext ? 'O' : 'X';
         this.setState({
           history: history.concat([{
             squares: squares
@@ -117,7 +117,7 @@ function Square(props) {
         if (winner) {
             status = 'Winner: ' + winner;
         } else {
-            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+            status = 'Next player: ' + (this.state.xIsNext ? 'O' : 'X');
         }
 
       return (
