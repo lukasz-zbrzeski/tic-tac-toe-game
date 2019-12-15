@@ -20,7 +20,7 @@ function Square(props) {
         if (calculateWinner(squares) || squares[i]) {
             return;
         }
-        squares[i] = this.state.xIsNext ? 'B' : 'A';
+        squares[i] = this.state.xIsNext ? 'A' : 'B';
         this.setState({
             history: history.concat([{
                 squares: squares,
@@ -80,7 +80,7 @@ function Square(props) {
         if (calculateWinner(squares) || squares[i]) {
           return;
         }
-        squares[i] = this.state.xIsNext ? 'B' : 'A';
+        squares[i] = this.state.xIsNext ? 'A' : 'B';
         this.setState({
           history: history.concat([{
             squares: squares
