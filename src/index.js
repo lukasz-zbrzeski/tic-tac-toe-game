@@ -93,7 +93,7 @@ function Square(props) {
     jumpTo(step) {
         this.setState({
             stepNumber: step,
-            xIsNext: false,
+            xIsNext: !((step % 2) === 0),
         });
     }
 
