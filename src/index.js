@@ -117,7 +117,7 @@ function Square(props) {
         if (winner) {
             status = 'Winner: ' + winner;
         } else {
-            status = 'Next player: ' + (this.state.xIsNext ? 'O' : 'X');
+            status = 'Next player: ' + (this.state.xIsNext ? 'GCI' : 'Player2');
         }
 
       return (
